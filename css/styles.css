@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    font-family: 'Koulen', cursive;
+    margin: 0 auto;
+    font-size: .85em;
+    overflow-x: hidden;
+
+} 
+
+img {
+
+    max-width: 100%;
+    display: inline-block;
+    /* why does block not work??? */
+
+  }
+
+
+.flex-container{
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    
+    max-width: 1100px;
+    padding: 5px;
+    margin: 0 auto;
+
+}
+
+.col{
+    
+    margin: 20px 10px;
+    /* color: white; */
+    text-align: center;
+    letter-spacing: .5px;
+
+}
+
+.box-1{
+
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    padding-bottom: 8px;
+
+}
+
+
+h1{
+
+    font-size: 2em;
+    margin-bottom: 15px;
+
+}
+
+h2{
+
+    padding: 5px;
+    margin: 0 auto;
+    font-size: .95em;
+    margin-top: 30px;
+
+}
+
+h4{
+
+    font-size: .95em;
+
+}
+
+.header_text, .section_text, .footer_text{
+
+    font-family: 'Noto Sans Lao', sans-serif;
+}
+
+.header_text{
+    margin-top: 12px;
+
+}
+
+.section_header{
+
+    font-size: 1.5em;
+    margin-top: 15px;
+    font-weight: 750px;
+}
+
+.section_text{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+footer{
+
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+}
+
+.full{
+
+    display: none;
+}
+
+
+.footer_header{
+  
+    padding-top: 30px;
+    margin-bottom: 20px;
+    /* display: inline-block; */
+}
+
+.footer_text{
+    margin-bottom: 20px;
+    /* display: inline-block; */
+}
+
+.phone_margin{
+   
+    margin-bottom: 10px;
+
+}
+
+.email_padding{
+
+    padding-bottom: 30px;
+
+}
+
+ul {
+   
+    list-style: none;
+    /* text-align: center; */
+    padding-left: 0;
+
+}
+
+li{
+
+    background-color: white;
+    margin-bottom: 6px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    
+
+}
+
+a {
+    
+    text-decoration: none;
+
+}
+
+nav {
+
+   
+    /* background-color: #829356; */
+
+}
+
+.portfolio_image{
+   width: 80%;
+   margin-top: 15px;
+    
+}
+
+.section_image{
+   margin-top: 28px;
+    
+}
+
+
+footer {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center; */
+    border-top: solid blue 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  
+}
+
+@media (min-width: 768px) {
+    
+    li{
+        
+        display: inline-block;
+        width:auto;
+        margin-right: 15px;
+        background-color: transparent;
+    }
+
+    .flex-container{
+
+        display: flex;
+        /* why flex over inline-flex? */
+        flex-wrap: wrap;
+
+    }
+
+    .header_text{
+   
+        text-align: left;
+        margin-left: 15px;
+        width:55%;
+        display:inline-block;
+       
+    }
+
+    .portfolio_image{
+
+        /* vertical-align: top;
+        width:30%;
+        display:inline-block; */
+        width:30%;
+        float:right
+        
+    }
+
+    .header_info{
+
+        overflow: auto;
+
+    }
+
+    .col{
+
+        flex-basis: calc(50% - 20px);
+        /* why did flex basis not work when flex container spanned the entire body section?? */
+    }
+   
+  
+    h2, h4{
+       
+        text-align: center;
+        font-size: 1.1em;
+
+    }
+
+
+    
+    .footer_text{
+        
+        padding-left: 100px;
+        padding-right: 100px;
+        /* Is there a better way of doing this? */
+        word-wrap: normal;
+        padding: auto;
+        font-size: 1.5em;
+    }
+
+    .phone_margin{
+
+        font-size: 1.5em;
+
+    }
+
+    .email_padding{
+
+        font-size: 1.5em;
+
+    }
+
+    .top{
+    
+        display: none;
+    
+    }
+
+    .full{
+
+        display: inline-block;
+    }
+
+}
+
+
+
+@media (min-width: 1024px) {
+
+    .flex-header{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .header_info{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .portfolio_image{
+    
+        width:40%;
+        order: 2 ;
+    
+    }
+
+    .header_text{
+    
+        width:57%;
+        letter-spacing: 1px;
+   
+    }
+
+    .flex-container{
+
+        flex-direction:row;
+    
+    }
+
+
+    .col{
+
+        flex-basis: calc(33.33% - 20px);
+        /* why did flex basis not work when flex container spanned the entire body section?? */
+    }
+
+
+}
