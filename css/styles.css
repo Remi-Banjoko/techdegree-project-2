@@ -21,6 +21,12 @@ img {
 
   }
 
+  nav ul li a :hover {
+
+color: pink;
+
+
+}
 
 .flex-container{
 
@@ -217,14 +223,19 @@ footer {
         /* vertical-align: top;
         width:30%;
         display:inline-block; */
-        width:30%;
-        float:right
+        width:40%;
+        order: 2 ;
+      
         
     }
 
     .header_info{
 
-        overflow: auto;
+        /* overflow: auto; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
 
     }
 
